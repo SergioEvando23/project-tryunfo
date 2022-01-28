@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class From extends React.Component {
+class Form extends React.Component {
   render() {
     const {
       cardName,
@@ -139,4 +139,4 @@ Form.propTypes = {
   onSaveButtonClick: PropTypes.func.isRequired,
 };
 
-export default From;
+export default Form;
