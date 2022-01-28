@@ -411,7 +411,7 @@ As props do componente `Form` deverão ser utilizadas conforme o indicado abaixo
 
   * Botão `save-button`: a propriedade `disabled` deve receber o valor da prop `isSaveButtonDisabled` e a prop `onClick` deve receber o valor da prop `onSaveButtonClick`.
 
-**Obs:** por enquanto a prop `hasTrunfo` ainda não foi utilizada, mas não se preocupe, pois ela será usada em breve.
+**Obs:** por enquanto a prop `hasTrunfo` ainda não foi utilizada, mas não se preocupe, pois ela será usada em breve. Por hora para o lint não quebrar você pode comentá-lo.
 
   ### O que será verificado
 
