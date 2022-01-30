@@ -8,9 +8,9 @@ class Card extends React.Component {
       cardDescription,
       cardAttr1,
       cardAttr2,
-      cardAttr3, 
+      cardAttr3,
       cardImage,
-      cardRare, 
+      cardRare,
       cardTrunfo,
     } = this.props;
 
@@ -31,7 +31,7 @@ class Card extends React.Component {
         <h3 data-testid="attr2-card">{ cardAttr2 }</h3>
         <h3 data-testid="attr3-card">{ cardAttr3 }</h3>
         <p data-testid="rare-card">{ cardRare }</p>
-        { cardTrunfo ? <h3 data-testid="trunfo-card">Super Trunfo</h3> : null}
+        { cardTrunfo ? <h4 data-testid="trunfo-card">Super Trunfo</h4> : null}
 
       </div>
     );
