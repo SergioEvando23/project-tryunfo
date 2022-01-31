@@ -20,22 +20,22 @@ class Form extends React.Component {
 
     return (
       <form>
-        <label htmlFor="name">
+        <label htmlFor="cardName">
           <p>Nome</p>
           <input
             value={ cardName }
-            name="name"
+            name="cardName"
             id="name"
             type="text"
             data-testid="name-input"
             onChange={ onInputChange }
           />
         </label>
-        <label htmlFor="description">
+        <label htmlFor="cardDescription">
           <p>Descrição</p>
           <textarea
             value={ cardDescription }
-            name="description"
+            name="cardDescription"
             id="description"
             type="textarea"
             data-testid="description-input"
@@ -43,33 +43,33 @@ class Form extends React.Component {
           />
         </label>
         <section>
-          <label htmlFor="attr1">
+          <label htmlFor="cardAttr1">
             <p>Attr01</p>
             <input
               value={ cardAttr1 }
-              name="attr1"
+              name="cardAttr1"
               id="attr1"
               type="number"
               data-testid="attr1-input"
               onChange={ onInputChange }
             />
           </label>
-          <label htmlFor="attr2">
+          <label htmlFor="cardAttr2">
             <p>Attr02</p>
             <input
               value={ cardAttr2 }
-              name="attr2"
+              name="cardAttr2"
               id="attr2"
               type="number"
               data-testid="attr2-input"
               onChange={ onInputChange }
             />
           </label>
-          <label htmlFor="attr3">
+          <label htmlFor="cardAttr3">
             <p>Attr03</p>
             <input
               value={ cardAttr3 }
-              name="attr3"
+              name="cardAttr3"
               id="attr3"
               type="number"
               data-testid="attr3-input"
@@ -77,11 +77,11 @@ class Form extends React.Component {
             />
           </label>
         </section>
-        <label htmlFor="image">
+        <label htmlFor="cardImage">
           <p>Imagem</p>
           <input
             value={ cardImage }
-            name="image"
+            name="cardImage"
             id="image"
             type="text"
             placeholder="Url image"
@@ -89,11 +89,11 @@ class Form extends React.Component {
             onChange={ onInputChange }
           />
         </label>
-        <label htmlFor="rare">
+        <label htmlFor="cardRare">
           <p>Raridade</p>
           <select
             value={ cardRare }
-            name="rare"
+            name="cardRare"
             id="rare"
             data-testid="rare-input"
             onChange={ onInputChange }
@@ -103,10 +103,10 @@ class Form extends React.Component {
             <option>muito raro</option>
           </select>
         </label>
-        <label htmlFor="super">
+        <label htmlFor="cardcardTrunfo">
           <input
             value={ cardTrunfo }
-            name="super"
+            name="cardTrunfo"
             id="super"
             type="checkbox"
             placeholder="Super Tryunfo"
