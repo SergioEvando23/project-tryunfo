@@ -1,0 +1,19 @@
+.appComponent {
+  display: flex;
+  padding: 20px;
+}
+
+input, select, button, textarea {
+  border: 1px solid #707070;
+  border-radius: 5px;
+  font-size: 20px;
+  height: 30px;
+  margin: 0%;
+  width: 250px;
+}
+
+p {
+  color: #707070;
+  font-weight: 700;
+  margin: 5px 5px 0 0;
+}
