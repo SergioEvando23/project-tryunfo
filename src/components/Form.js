@@ -40,6 +40,7 @@ class Form extends React.Component {
             type="textarea"
             data-testid="description-input"
             onChange={ onInputChange }
+            rows="8"
           />
         </label>
         <section>
@@ -51,6 +52,8 @@ class Form extends React.Component {
               id="attr1"
               type="number"
               data-testid="attr1-input"
+              min="0"
+              max="90"
               onChange={ onInputChange }
             />
           </label>
@@ -62,6 +65,8 @@ class Form extends React.Component {
               id="attr2"
               type="number"
               data-testid="attr2-input"
+              min="0"
+              max="90"
               onChange={ onInputChange }
             />
           </label>
@@ -73,6 +78,8 @@ class Form extends React.Component {
               id="attr3"
               type="number"
               data-testid="attr3-input"
+              min="0"
+              max="90"
               onChange={ onInputChange }
             />
           </label>
