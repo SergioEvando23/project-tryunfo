@@ -47,7 +47,7 @@ class Form extends React.Component {
           <label htmlFor="cardAttr1">
             <p>Attr01</p>
             <input
-              value={ cardAttr1 }
+              value={ `${cardAttr1}` }
               name="cardAttr1"
               id="attr1"
               type="number"
@@ -60,7 +60,7 @@ class Form extends React.Component {
           <label htmlFor="cardAttr2">
             <p>Attr02</p>
             <input
-              value={ cardAttr2 }
+              value={ `${cardAttr2}` }
               name="cardAttr2"
               id="attr2"
               type="number"
@@ -73,7 +73,7 @@ class Form extends React.Component {
           <label htmlFor="cardAttr3">
             <p>Attr03</p>
             <input
-              value={ cardAttr3 }
+              value={ `${cardAttr3}` }
               name="cardAttr3"
               id="attr3"
               type="number"
@@ -105,22 +105,25 @@ class Form extends React.Component {
             data-testid="rare-input"
             onChange={ onInputChange }
           >
-            <option>normal</option>
-            <option>raro</option>
-            <option>muito raro</option>
+            <option value="normal">normal</option>
+            <option value="raro">raro</option>
+            <option value="muito raro">muito raro</option>
           </select>
         </label>
         <label htmlFor="cardcardTrunfo">
-          <input
-            value={ cardTrunfo }
-            name="cardTrunfo"
-            id="super"
-            type="checkbox"
-            placeholder="Super Tryunfo"
-            checked={ cardTrunfo }
-            data-testid="trunfo-input"
-            onChange={ onInputChange }
-          />
+          <div className="isTrunfo">
+            <p>Super Trunfo:</p>
+            <input
+              value={ cardTrunfo }
+              name="cardTrunfo"
+              id="super"
+              type="checkbox"
+              placeholder="Super Tryunfo"
+              checked={ cardTrunfo }
+              data-testid="trunfo-input"
+              onChange={ onInputChange }
+            />
+          </div>
         </label>
         <button
           data-testid="save-button"
@@ -138,9 +141,9 @@ class Form extends React.Component {
 Form.propTypes = {
   cardName: PropTypes.string.isRequired,
   cardDescription: PropTypes.string.isRequired,
-  cardAttr1: PropTypes.string.isRequired,
-  cardAttr2: PropTypes.string.isRequired,
-  cardAttr3: PropTypes.string.isRequired,
+  cardAttr1: PropTypes.number.isRequired,
+  cardAttr2: PropTypes.number.isRequired,
+  cardAttr3: PropTypes.number.isRequired,
   cardImage: PropTypes.string.isRequired,
   cardRare: PropTypes.string.isRequired,
   cardTrunfo: PropTypes.bool.isRequired,

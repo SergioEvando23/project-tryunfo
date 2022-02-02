@@ -9,5 +9,12 @@ input, select, button, textarea {
   font-size: 20px;
   height: 30px;
   margin: 0%;
+  margin-bottom: 5px;
   width: 250px;
+}
+
+.isTrunfo {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }

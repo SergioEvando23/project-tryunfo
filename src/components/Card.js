@@ -18,21 +18,21 @@ class Card extends React.Component {
     return (
       <div className="cardComponent">
         <h2 data-testid="name-card">
-          {cardName}
+          {cardName ? `${cardName}` : 'digite o nome'}
         </h2>
         {cardImage ? <img
           className="cardImage"
           src={ cardImage }
           data-testid="image-card"
           alt={ cardName }
-        /> : null}
+        /> : 'adicione uma imagem jpg, png ou gif'}
         <p data-testid="description-card">
           {cardDescription}
         </p>
         <section className="power">
-          <h3 data-testid="attr1-card">{`Atk 01: ${cardAttr1}`}</h3>
-          <h3 data-testid="attr2-card">{`Atk 02: ${cardAttr2}`}</h3>
-          <h3 data-testid="attr3-card">{`Atk 03: ${cardAttr3}`}</h3>
+          <h3 data-testid="attr1-card">{cardAttr1 ? `atk1: ${cardAttr1}` : 'atk1: 0'}</h3>
+          <h3 data-testid="attr2-card">{cardAttr2 ? `atk2: ${cardAttr2}` : 'atk2: 0'}</h3>
+          <h3 data-testid="attr3-card">{cardAttr3 ? `atk3: ${cardAttr3}` : 'atk3: 0'}</h3>
         </section>
         <p data-testid="rare-card">{cardRare}</p>
         {cardTrunfo ? <h4 data-testid="trunfo-card">Super Trunfo</h4> : null}
@@ -45,9 +45,9 @@ class Card extends React.Component {
 Card.propTypes = {
   cardDescription: PropTypes.string.isRequired,
   cardName: PropTypes.string.isRequired,
-  cardAttr1: PropTypes.string.isRequired,
-  cardAttr2: PropTypes.string.isRequired,
-  cardAttr3: PropTypes.string.isRequired,
+  cardAttr1: PropTypes.number.isRequired,
+  cardAttr2: PropTypes.number.isRequired,
+  cardAttr3: PropTypes.number.isRequired,
   cardImage: PropTypes.string.isRequired,
   cardRare: PropTypes.string.isRequired,
   cardTrunfo: PropTypes.bool.isRequired,
