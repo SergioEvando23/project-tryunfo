@@ -6,13 +6,15 @@
 
 }
 
-.appBody {
+.appBody, .deck {
   background-color: #b1b1b1a7;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 2);
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   padding: 30px;
-  width: 800px;
+  width: 1000px;
 }
 
 input, select, button, textarea {
@@ -25,9 +27,17 @@ input, select, button, textarea {
   width: 250px;
 }
 
+h1 {
+  color: white;
+}
+
 .formTryunfo, .cardComponent {
   height: 600px;
   width: 400px;
+}
+
+.formTryunfo {
+  margin: 20px;
 }
 
 .isTrunfo {
@@ -57,11 +67,13 @@ input, select, button, textarea {
   align-items: center;
   background-color: #33854e;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 2);
   color: snow;
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  padding: 40 px 20px;
+  margin: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -73,6 +85,7 @@ input, select, button, textarea {
 
 .cardImage {
   border-radius: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 2);
   height: 280px;
   width: 280px;
 }
