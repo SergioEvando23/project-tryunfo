@@ -114,7 +114,8 @@ class Form extends React.Component {
           hasTrunfo
             ? <p className="hasTrunfo">Você já tem um Super Trunfo em seu baralho</p>
             : (
-              <label htmlFor="cardTrunfo">
+              <label htmlFor="cardTrunfo" className="checkboxTrunfo">
+                <p>Super Trunfo </p>
                 <input
                   type="checkbox"
                   checked={ cardTrunfo }
@@ -122,7 +123,6 @@ class Form extends React.Component {
                   onChange={ onInputChange }
                   name="cardTrunfo"
                 />
-                Super Trybe Trunfo
               </label>
             )
         }

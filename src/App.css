@@ -30,3 +30,8 @@ input, select, button, textarea {
   text-align: center;
   width: 230px;
 }
+
+.checkboxTrunfo {
+  display: flex;
+  margin: 20px 0;
+}
