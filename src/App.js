@@ -97,18 +97,18 @@ class App extends React.Component {
   render() {
     return (
       <div className="appComponent">
-        <div>
-          <h1>Tryunfo</h1>
+        <h1>Tryunfo</h1>
+        <div className="appBody">
           <Form
             onSaveButtonClick={ this.onSaveButtonClick }
             onInputChange={ this.onInputChange }
             { ...this.state }
           />
+          <Card
+            { ...this.state }
+            onInputChange={ this.onInputChange }
+          />
         </div>
-        <Card
-          { ...this.state }
-          onInputChange={ this.onInputChange }
-        />
       </div>
     );
   }

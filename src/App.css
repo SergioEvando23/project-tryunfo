@@ -1,6 +1,18 @@
 .appComponent {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   padding: 20px;
+
+}
+
+.appBody {
+  background-color: #b1b1b1a7;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  width: 800px;
 }
 
 input, select, button, textarea {
@@ -11,6 +23,11 @@ input, select, button, textarea {
   margin: 0%;
   margin-bottom: 5px;
   width: 250px;
+}
+
+.formTryunfo, .cardComponent {
+  height: 600px;
+  width: 400px;
 }
 
 .isTrunfo {
@@ -34,4 +51,34 @@ input, select, button, textarea {
 .checkboxTrunfo {
   display: flex;
   margin: 20px 0;
+}
+
+.cardComponent {
+  align-items: center;
+  background-color: #33854e;
+  border-radius: 10px;
+  color: snow;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  padding: 40 px 20px;
+  text-align: center;
+}
+
+.power {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.cardImage {
+  border-radius: 100%;
+  height: 280px;
+  width: 280px;
+}
+
+p {
+  color: black;
+  font-weight: 700;
+  margin: 5px 5px 0 0;
 }
