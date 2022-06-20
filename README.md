@@ -1,4 +1,4 @@
-# Projeto Solar System
+# Projeto Tryunfo
 
 Esse projeto foi feito como avaliação de ensino do curso de desenvolvimento web fullstack da Trybe, ultilizando se de tecnologias como:
 
