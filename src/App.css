@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .appComponent {
   align-items: center;
+  background: fixed url('./images/pallet_city.png');
+  background-size: 100vw 100vh;
   display: flex;
   flex-direction: column;
   padding: 20px;
-
 }
 
 .appBody, .deck {
@@ -18,12 +24,12 @@
 }
 
 input, select, button, textarea {
-  border: 1px solid #090909;
+  border: none;
   border-radius: 5px;
   font-size: 20px;
   height: 30px;
-  margin: 0%;
   margin-bottom: 5px;
+  padding-left: 3px;
   width: 250px;
 }
 
@@ -42,8 +48,8 @@ h1 {
 
 .isTrunfo {
   display: flex;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin: 5px 0;
+  width: 30px;
 }
 
 .hasTrunfo {
@@ -59,8 +65,10 @@ h1 {
 }
 
 .checkboxTrunfo {
+  box-shadow: none;
   display: flex;
-  margin: 20px 0;
+  margin: 0;
+  width: 26vw;
 }
 
 .cardComponent {

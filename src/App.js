@@ -48,6 +48,8 @@ class App extends React.Component {
       const verifyAttribute = getMaxAttr <= maximumAttributeValue && getMinAttr >= 0;
       const verifyFields = !!(cardName && cardDescription && cardImage) && sumAttrs;
 
+      console.log(verifyFields);
+
       this.setState({
         isSaveButtonDisabled: !(verifyFields && verifyAttribute),
       });
